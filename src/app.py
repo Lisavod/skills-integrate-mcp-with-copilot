@@ -1,9 +1,8 @@
-"""
-High School Management System API
+from dotenv import load_dotenv
+import os
 
-A super simple FastAPI application that allows students to view and sign up
-for extracurricular activities at Mergington High School.
-"""
+load_dotenv()
+print(os.getenv("GITHUB_PERSONAL_ACCESS_TOKEN"))
 
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
